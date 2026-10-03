@@ -21,7 +21,6 @@ TextField {
   font {
     family: config.Font
     pointSize: config.FontSize
-    bold: true
   }
   color: {{text.hex}}
   horizontalAlignment: Text.AlignHCenter
