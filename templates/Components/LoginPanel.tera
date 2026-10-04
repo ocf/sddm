@@ -164,6 +164,7 @@ Item {
       color: {{red.hex}}
       font.italic: true
       font.pointSize: config.FontSize
+      anchors.horizontalCenter: parent.horizontalCenter
     }
   }
   Connections {
