@@ -110,7 +110,7 @@ Item {
       }
       background: Rectangle {
         id: buttonBackground
-        color: {{flavor.colors[accent].hex}}
+        color: "#254a8a"
         radius: 3
       }
       states: [
@@ -119,7 +119,7 @@ Item {
           when: loginButton.down
           PropertyChanges {
             target: buttonBackground
-            color: {{subtext0.hex}}
+            color: {{teal.hex}}
           }
           PropertyChanges {
             target: buttonText
@@ -130,7 +130,7 @@ Item {
           when: loginButton.hovered
           PropertyChanges {
             target: buttonBackground
-            color: {{subtext0.hex}}
+            color: {{teal.hex}}
           }
           PropertyChanges {
             target: buttonText
