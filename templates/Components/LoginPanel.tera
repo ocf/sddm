@@ -154,8 +154,16 @@ Item {
         }
       }
       onClicked: {
+        errorMessage.text = " "
         sddm.login(user, password, session)
       }
+    }
+    Text {
+      id: errorMessage
+      text: " "
+      color: {{red.hex}}
+      font.italic: true
+      font.pointSize: config.FontSize
     }
   }
   Connections {
@@ -164,6 +172,7 @@ Item {
     function onLoginFailed() {
       passwordField.text = ""
       passwordField.focus = true
+      errorMessage.text = "Login failed"
     }
   }
 }
